@@ -24,8 +24,10 @@ function generateGradient() {
 
   var randCol1 = colors[Math.floor(Math.random() * colors.length)];
   var randCol2 = colors[Math.floor(Math.random() * colors.length)];
+  var randCol3 = colors[Math.floor(Math.random() * colors.length)];
   console.log(randCol1);
   console.log(randCol2);
+  console.log(randCol3);
 
   var angle = Math.round(Math.random() * 360);
   var gradient =
@@ -33,5 +35,6 @@ function generateGradient() {
 
   document.body.style.background = gradient;
   document.getElementById("output").innerHTML = gradient;
+  document.body.style.color = randCol3;
 }
 document.onload = generateGradient();
