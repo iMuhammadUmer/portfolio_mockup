@@ -128,6 +128,9 @@ button {
 @media only screen and (max-width: 600px) {
   .about {
     position: relative;
-    top: 500px;
+    top: 650px;
+  }
+  .photos img {
+    margin-top: 2em;
   }
 }
